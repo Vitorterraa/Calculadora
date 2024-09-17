@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Carregando = new Label();
+            progressBar1 = new ProgressBar();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // Carregando
+            // 
+            Carregando.BackColor = Color.Transparent;
+            Carregando.Font = new Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Carregando.ForeColor = SystemColors.ActiveCaptionText;
+            Carregando.Location = new Point(350, 378);
+            Carregando.Name = "Carregando";
+            Carregando.Size = new Size(172, 27);
+            Carregando.TabIndex = 1;
+            Carregando.Text = "Carregando...";
+            Carregando.TextAlign = ContentAlignment.MiddleCenter;
+            Carregando.Click += label1_Click;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(184, 408);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(499, 30);
+            progressBar1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(287, 65);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(292, 274);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Red;
+            ClientSize = new Size(896, 487);
+            Controls.Add(pictureBox1);
+            Controls.Add(progressBar1);
+            Controls.Add(Carregando);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Calculadora3000";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+        private Label Carregando;
+        private ProgressBar progressBar1;
+        private PictureBox pictureBox1;
     }
 }
