@@ -63,6 +63,16 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap camisa_01 {
+            get {
+                object obj = ResourceManager.GetObject("camisa 01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fundosp {
             get {
                 object obj = ResourceManager.GetObject("fundosp", resourceCulture);
@@ -76,6 +86,16 @@ namespace Calculadora.Properties {
         internal static System.Drawing.Bitmap luffy {
             get {
                 object obj = ResourceManager.GetObject("luffy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rafael {
+            get {
+                object obj = ResourceManager.GetObject("rafael", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
