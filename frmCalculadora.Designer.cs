@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Jogo
+    partial class frmCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,12 @@
             btndiv = new Button();
             btn0 = new Button();
             visor = new TextBox();
+            menuStrip1 = new MenuStrip();
+            arquivoToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            conversãoToolStripMenuItem = new ToolStripMenuItem();
+            menuConversao = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btn7
@@ -248,7 +254,43 @@
             visor.Size = new Size(506, 77);
             visor.TabIndex = 1;
             // 
-            // Jogo
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem, conversãoToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(536, 24);
+            menuStrip1.TabIndex = 2;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
+            arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            arquivoToolStripMenuItem.Size = new Size(61, 20);
+            arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(93, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // conversãoToolStripMenuItem
+            // 
+            conversãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuConversao });
+            conversãoToolStripMenuItem.Name = "conversãoToolStripMenuItem";
+            conversãoToolStripMenuItem.Size = new Size(75, 20);
+            conversãoToolStripMenuItem.Text = "Conversão";
+            // 
+            // menuConversao
+            // 
+            menuConversao.Name = "menuConversao";
+            menuConversao.Size = new Size(194, 22);
+            menuConversao.Text = "Celsius para fahrenheit";
+            // 
+            // frmCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -271,8 +313,12 @@
             Controls.Add(btn4);
             Controls.Add(btn9);
             Controls.Add(btn7);
-            Name = "Jogo";
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "frmCalculadora";
             Text = "Jogo";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,5 +342,10 @@
         private Button btndiv;
         private Button btn0;
         private TextBox visor;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem arquivoToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem conversãoToolStripMenuItem;
+        private ToolStripMenuItem menuConversao;
     }
 }

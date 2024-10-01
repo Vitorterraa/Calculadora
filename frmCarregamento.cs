@@ -1,11 +1,11 @@
 namespace Calculadora
 {
-    public partial class Form1 : Form
+    public partial class frmCarregamento : Form
     {
 
 
 
-        public Form1()
+        public frmCarregamento()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace Calculadora
             {
                 timer1.Enabled = false;
                 this.Hide();
-                Jogo formularioJogo = new Jogo();
+                frmCalculadora formularioJogo = new frmCalculadora();
                 formularioJogo.ShowDialog();
                 
 

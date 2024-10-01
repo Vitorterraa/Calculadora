@@ -12,12 +12,12 @@ namespace Calculadora
 {
 
 
-    public partial class Jogo : Form
+    public partial class frmCalculadora : Form
     {
         float valor = 0;
         string operacao = "";
 
-        public Jogo()
+        public frmCalculadora()
         {
             InitializeComponent();
         }
@@ -131,5 +131,12 @@ namespace Calculadora
             operacao = "divisao";
             visor.Text = "";
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
     }
 }

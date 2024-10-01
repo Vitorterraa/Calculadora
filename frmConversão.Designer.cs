@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form2
+    partial class frmConversão
     {
         /// <summary>
         /// Required designer variable.
