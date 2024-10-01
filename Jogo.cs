@@ -10,21 +10,126 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
+
+
     public partial class Jogo : Form
     {
+        float valor = 0;
+        string operacao = "";
+
         public Jogo()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
+            visor.Text = visor.Text + "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "9";
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            visor.Text = visor.Text + "0";
+        }
+
+        private void btncls_Click(object sender, EventArgs e)
+        {
+            visor.Clear();
+        }
+
+        private void btnadi_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "adicao";
+            visor.Text = "";
+
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnig_Click(object sender, EventArgs e)
         {
+            if (this.operacao == "adicao")
+            {
+                float resultado = valor + Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "subtracao")
+            {
+                float resultado = valor - Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "multiplicacao")
+            {
+                float resultado = valor * Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "divisao")
+            {
+                float resultado = valor / Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
 
+        }
+
+        private void btnsub_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "subtracao";
+            visor.Text = "";
+        }
+
+        private void btnmult_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "multiplicacao";
+            visor.Text = "";
+        }
+
+        private void btndiv_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "divisao";
+            visor.Text = "";
         }
     }
 }
