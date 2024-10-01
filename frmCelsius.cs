@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class frmConversão : Form
+    public partial class frmCelsius : Form
     {
         double celsius;
         double formula;
 
-        public frmConversão()
+        public frmCelsius()
         {
             InitializeComponent();
         }
@@ -30,10 +30,6 @@ namespace Calculadora
 
         }
 
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            txtCelsius.Text = txtCelsius.Text + "0";
-        }
 
 
 
@@ -111,6 +107,18 @@ namespace Calculadora
         }
 
         private void frmConversão_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtCelsius.Text = txtCelsius.Text + "0";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
