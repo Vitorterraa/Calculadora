@@ -165,6 +165,7 @@
             btnadi.TabIndex = 0;
             btnadi.Text = "+";
             btnadi.UseVisualStyleBackColor = false;
+            btnadi.Click += btnadi_Click;
             // 
             // btnmult
             // 
@@ -176,6 +177,7 @@
             btnmult.TabIndex = 0;
             btnmult.Text = "*";
             btnmult.UseVisualStyleBackColor = false;
+            btnmult.Click += btnmult_Click;
             // 
             // btnsub
             // 
@@ -187,6 +189,7 @@
             btnsub.TabIndex = 0;
             btnsub.Text = "-";
             btnsub.UseVisualStyleBackColor = false;
+            btnsub.Click += btnsub_Click;
             // 
             // btnig
             // 
@@ -198,6 +201,7 @@
             btnig.TabIndex = 0;
             btnig.Text = "=";
             btnig.UseVisualStyleBackColor = false;
+            btnig.Click += btnig_Click;
             // 
             // btncls
             // 
@@ -221,6 +225,7 @@
             btndiv.TabIndex = 0;
             btndiv.Text = "/";
             btndiv.UseVisualStyleBackColor = false;
+            btndiv.Click += btndiv_Click;
             // 
             // btn0
             // 

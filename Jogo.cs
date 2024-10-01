@@ -10,8 +10,13 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
+
+
     public partial class Jogo : Form
     {
+        float valor = 0;
+        string operacao = "";
+
         public Jogo()
         {
             InitializeComponent();
@@ -70,6 +75,61 @@ namespace Calculadora
         private void btncls_Click(object sender, EventArgs e)
         {
             visor.Clear();
+        }
+
+        private void btnadi_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "adicao";
+            visor.Text = "";
+
+
+        }
+
+        private void btnig_Click(object sender, EventArgs e)
+        {
+            if (this.operacao == "adicao")
+            {
+                float resultado = valor + Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "subtracao")
+            {
+                float resultado = valor - Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "multiplicacao")
+            {
+                float resultado = valor * Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+            if (this.operacao == "divisao")
+            {
+                float resultado = valor / Convert.ToSingle(visor.Text);
+                visor.Text = resultado.ToString();
+            }
+
+        }
+
+        private void btnsub_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "subtracao";
+            visor.Text = "";
+        }
+
+        private void btnmult_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "multiplicacao";
+            visor.Text = "";
+        }
+
+        private void btndiv_Click(object sender, EventArgs e)
+        {
+            valor = Convert.ToSingle(visor.Text);
+            operacao = "divisao";
+            visor.Text = "";
         }
     }
 }
