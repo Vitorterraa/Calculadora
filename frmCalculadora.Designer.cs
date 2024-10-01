@@ -289,6 +289,7 @@
             menuConversao.Name = "menuConversao";
             menuConversao.Size = new Size(194, 22);
             menuConversao.Text = "Celsius para fahrenheit";
+            menuConversao.Click += menuConversao_Click;
             // 
             // frmCalculadora
             // 

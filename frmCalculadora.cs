@@ -137,6 +137,10 @@ namespace Calculadora
             Application.Exit();
         }
 
-        
+        private void menuConversao_Click(object sender, EventArgs e)
+        {
+            frmConversão formularioConversao = new frmConversão();
+            formularioConversao.ShowDialog();
+        }
     }
 }
