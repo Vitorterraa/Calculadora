@@ -139,8 +139,14 @@ namespace Calculadora
 
         private void menuConversao_Click(object sender, EventArgs e)
         {
-            frmConversão formularioConversao = new frmConversão();
+            frmCelsius formularioConversao = new frmCelsius();
             formularioConversao.ShowDialog();
+        }
+
+        private void centímetroParaPolegadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCentimetro formularioCent = new frmCentimetro();
+            formularioCent.ShowDialog();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class frmConversão
+    partial class frmCelsius
     {
         /// <summary>
         /// Required designer variable.
@@ -45,15 +45,19 @@
             btnCalc = new Button();
             btnvir = new Button();
             btnCls = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // txtCelsius
             // 
+            txtCelsius.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCelsius.Location = new Point(23, 33);
             txtCelsius.Multiline = true;
             txtCelsius.Name = "txtCelsius";
+            txtCelsius.ReadOnly = true;
             txtCelsius.Size = new Size(378, 39);
             txtCelsius.TabIndex = 0;
+            txtCelsius.TextAlign = HorizontalAlignment.Center;
             txtCelsius.TextChanged += textBox1_TextChanged;
             // 
             // btn2
@@ -178,11 +182,14 @@
             // 
             // txtFah
             // 
+            txtFah.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtFah.Location = new Point(23, 118);
             txtFah.Multiline = true;
             txtFah.Name = "txtFah";
-            txtFah.Size = new Size(378, 49);
+            txtFah.ReadOnly = true;
+            txtFah.Size = new Size(378, 42);
             txtFah.TabIndex = 0;
+            txtFah.TextAlign = HorizontalAlignment.Center;
             txtFah.TextChanged += txtFah_TextChanged;
             // 
             // lblCelsius
@@ -242,11 +249,25 @@
             btnCls.UseVisualStyleBackColor = false;
             btnCls.Click += btnCls_Click;
             // 
-            // frmConversão
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(255, 128, 128);
+            button1.Font = new Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(307, 584);
+            button1.Name = "button1";
+            button1.Size = new Size(138, 39);
+            button1.TabIndex = 23;
+            button1.Text = "Sair";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // frmCelsius
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(436, 558);
+            ClientSize = new Size(457, 635);
+            Controls.Add(button1);
             Controls.Add(lblFah);
             Controls.Add(lblCelsius);
             Controls.Add(btn2);
@@ -264,7 +285,7 @@
             Controls.Add(btn7);
             Controls.Add(txtFah);
             Controls.Add(txtCelsius);
-            Name = "frmConversão";
+            Name = "frmCelsius";
             Text = "Form2";
             FormClosed += frmConversão_FormClosed;
             Load += frmConversão_Load;
@@ -273,8 +294,6 @@
         }
 
         #endregion
-
-        private TextBox txtCelsius;
         private Button btn2;
         private Button btn5;
         private Button btn3;
@@ -285,11 +304,13 @@
         private Button btn4;
         private Button btn9;
         private Button btn7;
-        private TextBox txtFah;
         private Label lblCelsius;
         private Label lblFah;
         private Button btnCalc;
         private Button btnvir;
         private Button btnCls;
+        private TextBox txtCelsius;
+        private TextBox txtFah;
+        private Button button1;
     }
 }

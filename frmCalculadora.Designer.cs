@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadora));
             btn7 = new Button();
             btn8 = new Button();
             btn9 = new Button();
@@ -50,6 +51,7 @@
             sairToolStripMenuItem = new ToolStripMenuItem();
             conversãoToolStripMenuItem = new ToolStripMenuItem();
             menuConversao = new ToolStripMenuItem();
+            centímetroParaPolegadaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -279,7 +281,7 @@
             // 
             // conversãoToolStripMenuItem
             // 
-            conversãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuConversao });
+            conversãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuConversao, centímetroParaPolegadaToolStripMenuItem });
             conversãoToolStripMenuItem.Name = "conversãoToolStripMenuItem";
             conversãoToolStripMenuItem.Size = new Size(75, 20);
             conversãoToolStripMenuItem.Text = "Conversão";
@@ -287,9 +289,16 @@
             // menuConversao
             // 
             menuConversao.Name = "menuConversao";
-            menuConversao.Size = new Size(194, 22);
+            menuConversao.Size = new Size(212, 22);
             menuConversao.Text = "Celsius para fahrenheit";
             menuConversao.Click += menuConversao_Click;
+            // 
+            // centímetroParaPolegadaToolStripMenuItem
+            // 
+            centímetroParaPolegadaToolStripMenuItem.Name = "centímetroParaPolegadaToolStripMenuItem";
+            centímetroParaPolegadaToolStripMenuItem.Size = new Size(212, 22);
+            centímetroParaPolegadaToolStripMenuItem.Text = "Centímetro para polegada";
+            centímetroParaPolegadaToolStripMenuItem.Click += centímetroParaPolegadaToolStripMenuItem_Click;
             // 
             // frmCalculadora
             // 
@@ -315,9 +324,10 @@
             Controls.Add(btn9);
             Controls.Add(btn7);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "frmCalculadora";
-            Text = "Jogo";
+            Text = "Calculadora";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -348,5 +358,6 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem conversãoToolStripMenuItem;
         private ToolStripMenuItem menuConversao;
+        private ToolStripMenuItem centímetroParaPolegadaToolStripMenuItem;
     }
 }
