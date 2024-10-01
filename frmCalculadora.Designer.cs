@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Jogo
+    partial class frmCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -45,13 +45,19 @@
             btndiv = new Button();
             btn0 = new Button();
             visor = new TextBox();
+            menuStrip1 = new MenuStrip();
+            arquivoToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            conversãoToolStripMenuItem = new ToolStripMenuItem();
+            menuConversao = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btn7
             // 
             btn7.BackColor = Color.White;
             btn7.Font = new Font("Cooper Black", 18F);
-            btn7.Location = new Point(268, 235);
+            btn7.Location = new Point(268, 241);
             btn7.Name = "btn7";
             btn7.Size = new Size(122, 62);
             btn7.TabIndex = 0;
@@ -63,7 +69,7 @@
             // 
             btn8.BackColor = Color.White;
             btn8.Font = new Font("Cooper Black", 18F);
-            btn8.Location = new Point(140, 235);
+            btn8.Location = new Point(140, 241);
             btn8.Name = "btn8";
             btn8.Size = new Size(122, 62);
             btn8.TabIndex = 0;
@@ -75,7 +81,7 @@
             // 
             btn9.BackColor = Color.White;
             btn9.Font = new Font("Cooper Black", 18F);
-            btn9.Location = new Point(12, 235);
+            btn9.Location = new Point(12, 241);
             btn9.Name = "btn9";
             btn9.Size = new Size(122, 62);
             btn9.TabIndex = 0;
@@ -87,7 +93,7 @@
             // 
             btn4.BackColor = Color.White;
             btn4.Font = new Font("Cooper Black", 18F);
-            btn4.Location = new Point(268, 303);
+            btn4.Location = new Point(268, 309);
             btn4.Name = "btn4";
             btn4.Size = new Size(122, 62);
             btn4.TabIndex = 0;
@@ -99,7 +105,7 @@
             // 
             btn6.BackColor = Color.White;
             btn6.Font = new Font("Cooper Black", 18F);
-            btn6.Location = new Point(12, 303);
+            btn6.Location = new Point(12, 309);
             btn6.Name = "btn6";
             btn6.Size = new Size(122, 62);
             btn6.TabIndex = 0;
@@ -111,7 +117,7 @@
             // 
             btn5.BackColor = Color.White;
             btn5.Font = new Font("Cooper Black", 18F);
-            btn5.Location = new Point(140, 303);
+            btn5.Location = new Point(140, 309);
             btn5.Name = "btn5";
             btn5.Size = new Size(122, 62);
             btn5.TabIndex = 0;
@@ -123,7 +129,7 @@
             // 
             btn1.BackColor = Color.White;
             btn1.Font = new Font("Cooper Black", 18F);
-            btn1.Location = new Point(268, 371);
+            btn1.Location = new Point(268, 377);
             btn1.Name = "btn1";
             btn1.Size = new Size(122, 62);
             btn1.TabIndex = 0;
@@ -135,7 +141,7 @@
             // 
             btn3.BackColor = Color.White;
             btn3.Font = new Font("Cooper Black", 18F);
-            btn3.Location = new Point(12, 371);
+            btn3.Location = new Point(12, 377);
             btn3.Name = "btn3";
             btn3.Size = new Size(122, 62);
             btn3.TabIndex = 0;
@@ -147,7 +153,7 @@
             // 
             btn2.BackColor = Color.White;
             btn2.Font = new Font("Cooper Black", 18F);
-            btn2.Location = new Point(140, 371);
+            btn2.Location = new Point(140, 377);
             btn2.Name = "btn2";
             btn2.Size = new Size(122, 62);
             btn2.TabIndex = 0;
@@ -159,7 +165,7 @@
             // 
             btnadi.BackColor = Color.White;
             btnadi.Font = new Font("Cooper Black", 18F);
-            btnadi.Location = new Point(12, 166);
+            btnadi.Location = new Point(12, 172);
             btnadi.Name = "btnadi";
             btnadi.Size = new Size(122, 62);
             btnadi.TabIndex = 0;
@@ -171,7 +177,7 @@
             // 
             btnmult.BackColor = Color.White;
             btnmult.Font = new Font("Cooper Black", 18F);
-            btnmult.Location = new Point(268, 166);
+            btnmult.Location = new Point(268, 172);
             btnmult.Name = "btnmult";
             btnmult.Size = new Size(122, 62);
             btnmult.TabIndex = 0;
@@ -183,7 +189,7 @@
             // 
             btnsub.BackColor = Color.White;
             btnsub.Font = new Font("Cooper Black", 18F);
-            btnsub.Location = new Point(140, 166);
+            btnsub.Location = new Point(140, 172);
             btnsub.Name = "btnsub";
             btnsub.Size = new Size(122, 62);
             btnsub.TabIndex = 0;
@@ -195,7 +201,7 @@
             // 
             btnig.BackColor = Color.White;
             btnig.Font = new Font("Cooper Black", 18F);
-            btnig.Location = new Point(396, 303);
+            btnig.Location = new Point(396, 309);
             btnig.Name = "btnig";
             btnig.Size = new Size(122, 188);
             btnig.TabIndex = 0;
@@ -207,7 +213,7 @@
             // 
             btncls.BackColor = Color.White;
             btncls.Font = new Font("Cooper Black", 18F);
-            btncls.Location = new Point(396, 235);
+            btncls.Location = new Point(396, 241);
             btncls.Name = "btncls";
             btncls.Size = new Size(122, 62);
             btncls.TabIndex = 0;
@@ -219,7 +225,7 @@
             // 
             btndiv.BackColor = Color.White;
             btndiv.Font = new Font("Cooper Black", 18F);
-            btndiv.Location = new Point(396, 166);
+            btndiv.Location = new Point(396, 172);
             btndiv.Name = "btndiv";
             btndiv.Size = new Size(122, 62);
             btndiv.TabIndex = 0;
@@ -231,7 +237,7 @@
             // 
             btn0.BackColor = Color.White;
             btn0.Font = new Font("Cooper Black", 18F);
-            btn0.Location = new Point(12, 439);
+            btn0.Location = new Point(12, 445);
             btn0.Name = "btn0";
             btn0.Size = new Size(378, 52);
             btn0.TabIndex = 0;
@@ -241,19 +247,56 @@
             // 
             // visor
             // 
-            visor.Location = new Point(12, 64);
+            visor.Location = new Point(12, 70);
             visor.Margin = new Padding(3, 2, 3, 2);
             visor.Multiline = true;
             visor.Name = "visor";
             visor.Size = new Size(506, 77);
             visor.TabIndex = 1;
             // 
-            // Jogo
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem, conversãoToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(536, 24);
+            menuStrip1.TabIndex = 2;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
+            arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            arquivoToolStripMenuItem.Size = new Size(61, 20);
+            arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(93, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // conversãoToolStripMenuItem
+            // 
+            conversãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuConversao });
+            conversãoToolStripMenuItem.Name = "conversãoToolStripMenuItem";
+            conversãoToolStripMenuItem.Size = new Size(75, 20);
+            conversãoToolStripMenuItem.Text = "Conversão";
+            // 
+            // menuConversao
+            // 
+            menuConversao.Name = "menuConversao";
+            menuConversao.Size = new Size(194, 22);
+            menuConversao.Text = "Celsius para fahrenheit";
+            menuConversao.Click += menuConversao_Click;
+            // 
+            // frmCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(536, 501);
+            ClientSize = new Size(536, 521);
             Controls.Add(visor);
             Controls.Add(btnsub);
             Controls.Add(btn2);
@@ -271,8 +314,12 @@
             Controls.Add(btn4);
             Controls.Add(btn9);
             Controls.Add(btn7);
-            Name = "Jogo";
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "frmCalculadora";
             Text = "Jogo";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,5 +343,10 @@
         private Button btndiv;
         private Button btn0;
         private TextBox visor;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem arquivoToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem conversãoToolStripMenuItem;
+        private ToolStripMenuItem menuConversao;
     }
 }

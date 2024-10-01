@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class Form2 : Form
+    public partial class Temperatura : Form
     {
-        public Form2()
+        public Temperatura()
         {
             InitializeComponent();
+        }
+
+        private void pgbCarregamento_Click(object sender, EventArgs e)
+        {
+            
+            
+                
         }
     }
 }
